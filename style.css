@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: black;
+    font-size: 2rem;
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+    margin-right: 15px;
+}
+.contacts{
+margin-left: auto;
+}
+a{   
+    text-decoration: none;
+    color: white;
+}
+main {
+    text-align: center;
+  }
+.party{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.party2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.container {
+    flex: 500px;
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container2 {
+  flex: 500px;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 0 0 0 300px;
+  text-align: center;
+}
+.grow{
+flex-grow: 1;
+}
+.midle{
+  justify-content:center;
+}
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 300px;
+}
+.btn {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: color 1s, border-color 1s, background-color 1s;
+    display: inline-block;
+    border-radius: 5px;
+}
+.btn-white {
+    text-decoration: none;
+    color: cyan;
+}
+
+.text-area {
+    text-align: center;
+    padding: 20px;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+#game {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#board {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    float: left;
+    font-size: 70px;
+}
+
+.btn {
+    margin: 10px 0;
+}
+.calc-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    border: 2px solid #000000; /* Контур вокруг калькулятора */
+    margin-block-start: 2em;
+  }
+  
+  .screen {
+    background: green;
+    color: hsl(255, 100%, 100%);
+    font-size: 2rem;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 80px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+  }
+  
+  .screen span {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .screen::before {
+    content: '|'; /* Разделитель между цифрами и действиями */
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: 5px; /* Расстояние от разделителя до цифр */
+    color: #fff; /* Цвет разделителя */
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px; /* Увеличенное расстояние между кнопками */
+    align-items: center; /* Выравнивание на одном уровне */
+    border-top: 2px solid #000000; /* Контур вокруг кнопок */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для кнопок */
+  }
+  
+  .key {
+    background: hsl(210, 25%, 95%);
+    color: #000;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Плавные изменения цвета и тени */
+    border-radius: 50%; /* Круглые углы кнопок */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для кнопок */
+  }
+  
+  .key:hover {
+    background-color: #7f8c8d; /* Темнее серый при наведении */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Тень усиливается при наведении */
+  }
+  
+  .digits {
+    grid-column: span 3;
+  }
+  
+  .result,
+ 
+  
+  .clear {
+    background: hsl(210, 25%, 95%);
+    color: #000;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Плавные изменения цвета и тени */
+    border-radius: 50%; /* Круглые углы кнопок */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для кнопок */
+  }
+  
+  .clear:hover {
+    background-color: #7f8c8d; /* Темнее серый при наведении */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Тень усиливается при наведении */
+  }
+  
+  .other {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+@media print {
+
+    .header > *:not(main) {
+        display: none;
+    }
+    div{
+        padding: 15px;
+    }
+    .footer {
+        color: black;
+        margin-top: 30px;
+    }
+}
